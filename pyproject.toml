@@ -8,8 +8,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "~3.10"
 pandas = "^2.0.3"
-neo4j = "^5.10.0"
 loguru = "^0.7.0"
+pyperclip = "^1.8.2"
+openpyxl = "^3.1.2"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.0.280"
