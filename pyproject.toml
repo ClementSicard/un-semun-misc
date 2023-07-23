@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "un-semun-misc"
+version = "0.1.0"
+description = "Miscellanous scripts for SemUN project"
+authors = ["Clément Sicard <csicard@ethz.ch>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+pandas = "^2.0.3"
+neo4j = "^5.10.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.280"
+isort = "^5.12.0"
+mypy = "^1.4.1"
+pre-commit = "^3.3.3"
+interrogate = "^1.5.0"
+
+[tool.interrogate]
+ignore-init-method = true
+ignore-init-module = true
+ignore-module = true
+fail-under = 100
+verbose = 2
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
